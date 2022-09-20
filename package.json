@@ -8,6 +8,9 @@
   },
   "author": "RJ SaiChandran",
   "license": "ISC",
+  "engines": {
+    "node": "16.16.0"
+  },
   "dependencies": {
     "bcrypt": "^5.0.1",
     "body-parser": "^1.20.0",
