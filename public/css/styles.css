@@ -1,11 +1,16 @@
-
 body {
   background-color: #E8ECEF;
+  background: #B2FEFA;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0ED2F7, #B2FEFA);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0ED2F7, #B2FEFA);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .centered {
-    padding-top: 200px;
-    text-align: center;
+  padding-top: 160px;
+  text-align: center;
 }
 
 .secret-text {
@@ -13,4 +18,18 @@ body {
   font-size: 2rem;
   color: #fff;
   background-color: #000;
+  border-radius: 6px;
+}
+
+.display-3 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 600;
+}
+
+.lead {
+  font-family: 'Roboto Slab', serif;
+}
+
+.c2 {
+  padding-top: 160px;
 }

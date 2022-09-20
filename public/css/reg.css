@@ -1,0 +1,42 @@
+body {
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+.ha {
+  background-color: #A1C298;
+  border-radius: 15px;
+  color: #A1C298;
+}
+
+.card {
+  border-radius: 15px;
+  box-shadow: 10px 10px 8px 10px #888888;
+}
+
+.social-block {
+  background-color: #A1C298;
+}
+
+.re {
+  background-color: #EEF1FF;
+  border-radius: 15px;
+  position: relative;
+}
+
+h1 {
+  font-family: 'Dangrek', cursive;
+}
+
+@media screen and (max-width: 570px) {
+  .social-block {
+    margin-top: 3pc;
+    margin-left: 40px;
+    }
+}
+
+.bb {
+  position: absolute;
+  top: 192px;
+  left: 118px;
+}

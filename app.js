@@ -29,7 +29,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 
-mongoose.connect("mongodb://localhost:27017/userDB");
+mongoose.connect("mongodb+srv://admin-sai:test123@cluster0.bpnwcnc.mongodb.net/userDB");
 
 const userSchema = new mongoose.Schema({
   email: String,
@@ -165,11 +165,12 @@ app.get('/register', function(req, res) {
   res.render("register");
 });
 
+app.post('/have', function(req, res) {
+  res.redirect('login');
+})
+
 app.get('/secrets', function(req, res) {
-  User.find({
-    "secret": {
-      $ne: null
-    }
+  User.find({"secret": {$ne: null} //not equal to null
   }, function(err, foundSecret) {
     if (err) {
       console.log(err);
@@ -193,8 +194,6 @@ app.get('/submit', function(req, res) {
 
 app.post('/submit', function(req, res) {
   const submittedSecret = req.body.secret;
-  console.log(req.user.id);
-
   User.findById(req.user.id, function(err, foundUser) {
     if (err) {
       console.log(err);
